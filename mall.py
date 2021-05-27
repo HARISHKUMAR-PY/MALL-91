@@ -204,7 +204,7 @@ class Bot(discord.Client):
        #     if answer == 1:
          #       three_cheak = ":x:"
           #only edit here
-        self.embed=discord.Embed(title="**MALL91 GOOGLE RESULTS**",description =f"**➤ANSWER 1️⃣:** [{lst_scores[0]}]({g}){one_check}\n**➤ANSWER 2️⃣:** [{lst_scores[1]}]({g}){two_check}\n**➤ANSWER 3️⃣:** [{lst_scores[2]}]({g}){three_check}\n**➤ANSWER 4️⃣:** [{lst_scores[3]}]({g}){four_check}\n\n**__Best Result__**\n       {best_answer}",color=0x000000)
+        self.embed=discord.Embed(title="**MALL91 GOOGLE RESULTS**",description =f"**__𝙾𝚙𝚝𝚒𝚘𝚗❶__** [{lst_scores[0]}]({g}){one_check}\n**__𝙾𝚙𝚝𝚒𝚘𝚗❷__**[{lst_scores[1]}]({g}){two_check}\n**__𝙾𝚙𝚝𝚒𝚘𝚗❸__**[{lst_scores[2]}]({g}){three_check}\n**__𝙾𝚙𝚝𝚒𝚘𝚗❹__**[{lst_scores[3]}]({g}){four_check}\n\n**__Best Result__**\n       {best_answer}",color=0x000000)
         
         if self.embed_msg is not None:
             await self.embed_msg.edit(embed=self.embed)
