@@ -21,9 +21,9 @@ oot_channel_id_list = [
 
 answer_pattern = re.compile(r'(not|n)?([1-4]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
 
-apgscore = 2850
-nomarkscore = 2660
-markscore = 2400
+apgscore = 500
+nomarkscore = 500
+markscore = 500
 
 async def update_scores(content, answer_scores):
     global answer_pattern
