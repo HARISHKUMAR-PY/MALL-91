@@ -10,9 +10,9 @@ import threading
 import concurrent
 
 #BOT_OWNER_ROLE = 'Runner' # change to what you need
-#BOT_OWNER_ROLE_ID = "503197827556704268" 
+#BOT_OWNER_ROLE_ID = "846601968758816778" 
   
-g="https://discord.gg/qNNBVDq" 
+g="https://discord.gg/eZWtQXUt2z" 
 
  
 oot_channel_id_list = [
@@ -269,7 +269,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('Nzg4OTg2ODgxNTA0ODM3NjQz.X9rfSw.3fEr7vFc8BPpNswILL-AFIu-gbs'))
+    loop.create_task(bot.start('ODQ1MjQ2OTkzNDYyNDYwNDE2.YKeLmw.YIvJC_--23aJA3VGo5_jbaTOf5k'))
     loop.run_forever()
 
 
@@ -278,7 +278,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NzE2NzE2NTIzMjc1ODEyOTE0.XwnJ5w.2flXMALdAuGE74In8NiZTeZj3po ',
+    loop.create_task(selfbot.start('NzgyMjUwNjYzOTI1MTIxMDM0.YKohjQ.UqyELBtHlWo6EbWzeF02THBRaBU',
                                    bot=False))
     loop.run_forever()
 
