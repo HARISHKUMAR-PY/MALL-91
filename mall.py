@@ -205,11 +205,8 @@ class Bot(discord.Client):
          #       three_cheak = ":x:"
           #only edit here
         self.embed.set_field_at(0, name=f"**__𝙾𝚙𝚝𝚒𝚘𝚗❶__** {mark_check_one}", value="**{0}.0**{1}".format(lst_scores[0], one_check))
-
         self.embed.set_field_at(1, name=f"**__𝙾𝚙𝚝𝚒𝚘𝚗❷__** {mark_check_two}", value="**{0}.0**{1}".format(lst_scores[1], two_check))
-
         self.embed.set_field_at(2, name=f"**__𝙾𝚙𝚝𝚒𝚘𝚗❸__** {mark_check_three}", value="**{0}.0**{1}".format(lst_scores[2], three_check))
-        
         self.embed.set_field_at(3, name=f"**__𝙾𝚙𝚝𝚒𝚘𝚗❹__** {mark_check_four}", value="**{0}.0**{1}".format(lst_scores[3], four_check))
         
         
