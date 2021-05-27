@@ -124,7 +124,7 @@ class Bot(discord.Client):
 
         # embed creation
         #don't edit here
-        self.embed=discord.Embed(title="",description =f"KUMU ANSWERS",colour=0xFBC0AC)
+        self.embed=discord.Embed(title="",description =f"MALL91 GOOGLE RESULTS",colour=0xFBC0AC)
         
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -154,12 +154,12 @@ class Bot(discord.Client):
         not_answer = ' '
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
-        best_answer= "⚠️"
+        best_answer= "<a:go:827024394978983937>"
         #global wrong             
 
         if highest > 0:
             if answer == 1:
-                one_check = "** **✅ ** **"
+                one_check = "<a:gold:827024591439265792>"
                 best_answer = ":one:"
                 gif_ans = "https://cdn.discordapp.com/attachments/720850437041029181/743345493207154778/723415445167931452.png"
             else:
@@ -168,7 +168,7 @@ class Bot(discord.Client):
                 
 
             if answer == 2:
-                two_check = "** **✅** **"
+                two_check = "<a:gold:827024591439265792>"
                 best_answer = ":two:"
                 gif_ans = "https://cdn.discordapp.com/attachments/720850437041029181/743345493966454885/723416002666299433.png"
             else:
@@ -177,7 +177,7 @@ class Bot(discord.Client):
                 
 
             if answer == 3:
-                three_check = "** **✅ ** **"
+                three_check = "<a:gold:827024591439265792>"
                 best_answer = ":three:"
                 gif_ans = "https://cdn.discordapp.com/attachments/720850437041029181/743345494142615612/723418348834258974.png"
             else:
@@ -186,7 +186,7 @@ class Bot(discord.Client):
                 
      
             if answer == 4:
-                four_check = "** **✅** **"
+                four_check = "<a:gold:827024591439265792>"
                 best_answer = ":four:"
                 gif_ans = "https://cdn.discordapp.com/attachments/720850437041029181/743345494280896562/723419217650647090.png"
             else:
@@ -204,7 +204,7 @@ class Bot(discord.Client):
        #     if answer == 1:
          #       three_cheak = ":x:"
           #only edit here
-        self.embed=discord.Embed(title="**Kumu Answer**",description =f"**➤ANSWER 1️⃣:** [{lst_scores[0]}]({g}){one_check}\n**➤ANSWER 2️⃣:** [{lst_scores[1]}]({g}){two_check}\n**➤ANSWER 3️⃣:** [{lst_scores[2]}]({g}){three_check}\n**➤ANSWER 4️⃣:** [{lst_scores[3]}]({g}){four_check}\n\n**__Best Result__**\n       {best_answer}",color=0x000000)
+        self.embed=discord.Embed(title="**MALL91 GOOGLE RESULTS**",description =f"**➤ANSWER 1️⃣:** [{lst_scores[0]}]({g}){one_check}\n**➤ANSWER 2️⃣:** [{lst_scores[1]}]({g}){two_check}\n**➤ANSWER 3️⃣:** [{lst_scores[2]}]({g}){three_check}\n**➤ANSWER 4️⃣:** [{lst_scores[3]}]({g}){four_check}\n\n**__Best Result__**\n       {best_answer}",color=0x000000)
         
         if self.embed_msg is not None:
             await self.embed_msg.edit(embed=self.embed)
@@ -230,7 +230,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "km":
+        if message.content.lower() == "m":
             await message.delete()
             
             self.embed_msg = None
@@ -238,8 +238,8 @@ class Bot(discord.Client):
             await self.update_embeds()
             self.embed_msg = \
                 await message.channel.send('',embed=self.embed)
-            #await self.embed_msg.add_reaction("✅")
-            await self.embed_msg.add_reaction("👍")
+            #await self.embed_msg.add_reaction("<a:levelup:827049375566004274>")
+            await self.embed_msg.add_reaction("<a:levelup:827049375566004274>")
             self.embed_channel_id = message.channel.id
        
 
