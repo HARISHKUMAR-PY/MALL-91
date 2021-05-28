@@ -221,7 +221,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="TECHNO KUMU"))
+        await self.change_presence(activity=discord.Activity(type=1,name="MALL91 CROWD RESULTS"))
 
     async def on_message(self, message):
 
