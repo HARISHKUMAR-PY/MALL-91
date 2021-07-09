@@ -204,7 +204,7 @@ class Bot(discord.Client):
        #     if answer == 1:
          #       three_cheak = ":x:"
           #only edit 
-        self.embed=discord.Embed(title="**Fangame Live! **",description="Type 0 to start the bot",color=0xFF6310)
+        self.embed=discord.Embed(title="**Fangame Live! **",description="Type 0 to start the bot",color=0x2ecc71)
         
         if self.embed_msg is not None:
             await self.embed_msg.edit(embed=self.embed)
