@@ -221,7 +221,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="MALL91 CROWD RESULTS"))
+        await self.change_presence(activity=discord.Activity(type=1,name="Fangame Live! "))
 
     async def on_message(self, message):
 
@@ -230,7 +230,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "m":
+        if message.content.lower() == "+start":
             await message.delete()
             
             self.embed_msg = None
